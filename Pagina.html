@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Jhonathan y Edwin </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: 5px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #saludo {
+            margin-top: 15px;
+            font-size: 18px;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>¡Hola Mundo!</h1>
+        <p>Ingresa tu nombre:</p>
+        <input type="text" id="nombre" placeholder="Escribe tu nombre aquí">
+        <button onclick="mostrarSaludo()">Mostrar Saludo</button>
+        <!-- Botón que apunta a block.html en la misma carpeta -->
+        <button onclick="window.location.href='block.HTML'">Código de Edwin</button>
+        <p id="saludo"></p>
+    </div>
+
+    <script>
+        function mostrarSaludo() {
+            var nombre = document.getElementById('nombre').value;
+            if (nombre) {
+                document.getElementById('saludo').innerText = '¡Hola, ' + nombre + '!';
+            } else {
+                document.getElementById('saludo').innerText = '¡Hola, Mundo!';
+            }
+        }
+    </script>
+    <footer>
+  <p>Edwin Isaac Morales Paz y Jhonathan Isaac Sánchez Arellano - 8ISC</p>
+</footer>
+
+</body>
+</html>
+
